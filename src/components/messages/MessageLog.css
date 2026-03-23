@@ -1,0 +1,55 @@
+.message-log-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.message-log-container h2 {
+  margin-bottom: 15px;
+  color: #203a43;
+}
+
+.message-log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.message-log-table th,
+.message-log-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #faf8f8;
+  font-size: 13px;
+}
+
+.message-log-table th {
+  background: #080808;
+}
+
+.message-text {
+  text-align: left;
+  font-size: 12px;
+  max-width: 300px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.status.sent {
+  background: #25d366;
+}
+
+.status.failed {
+  background: #ff4d4d;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 15px;
+}

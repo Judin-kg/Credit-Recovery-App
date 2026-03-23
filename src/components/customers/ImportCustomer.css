@@ -1,0 +1,78 @@
+.import-container {
+  padding: 30px;
+  margin-left: 260px;
+}
+
+.import-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.import-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.import-form input,
+.import-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.import-form input:focus,
+.import-form select:focus {
+  border-color: #00bcd4;
+}
+
+.import-form button {
+  padding: 12px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.import-form button:hover {
+  background: #0097a7;
+}
+
+/* Balance field style */
+.balance-field {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Actions */
+.action-preview {
+  margin-top: 40px;
+}
+
+.actions button {
+  border: none;
+  background: #eee;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  background: #ddd;
+}
+
+.whatsapp-btn {
+  background: #25d366 !important;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d !important;
+}

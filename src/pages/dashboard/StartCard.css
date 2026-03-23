@@ -1,0 +1,35 @@
+.start-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.start-card:hover {
+  transform: translateY(-3px);
+}
+
+.start-card-icon {
+  font-size: 32px;
+}
+
+.start-card-content h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.start-card-content p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Color Variants */
+.start-card.blue { border-left: 5px solid #2196f3; }
+.start-card.green { border-left: 5px solid #4caf50; }
+.start-card.red { border-left: 5px solid #f44336; }
+.start-card.orange { border-left: 5px solid #ff9800; }

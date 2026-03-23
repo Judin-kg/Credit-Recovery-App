@@ -1,0 +1,39 @@
+.recovery-report-container {
+  padding: 20px;
+}
+
+.recovery-report-container h2 {
+  margin-bottom: 20px;
+  color: #203a43;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.report-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.report-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #2e7d32;
+}
+
+.report-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.report-note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}

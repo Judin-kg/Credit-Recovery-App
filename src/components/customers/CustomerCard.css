@@ -1,0 +1,55 @@
+.customer-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.customer-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #203a43;
+}
+
+.card-header .icon {
+  font-size: 22px;
+  color: #00bcd4;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.card-footer button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.card-footer button:first-child {
+  background: #203a43;
+  color: white;
+}
+
+.card-footer .whatsapp {
+  background: #25d366;
+  color: white;
+}

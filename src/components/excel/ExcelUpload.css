@@ -1,0 +1,38 @@
+.excel-upload-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.excel-upload-container h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.excel-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.excel-upload-form input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.excel-upload-form button {
+  background: #2e7d32;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.excel-upload-form button:hover {
+  background: #1b5e20;
+}

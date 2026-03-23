@@ -1,0 +1,30 @@
+.ocr-table-container {
+  margin-top: 20px;
+}
+
+.ocr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ocr-table th,
+.ocr-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.ocr-table th {
+  background: #f4f4f4;
+}
+
+.raw-preview {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+}
