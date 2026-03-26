@@ -2,7 +2,7 @@ import React from "react";
 
 import "../customers/CustomersTable.css";
 import { FaWhatsapp, FaEye } from "react-icons/fa";
-import OcrDataTable from "./OcrDataTable";
+// import OcrDataTable from "./OcrDataTable";
 
 const CustomerTable = ({ customers = [], onView, onSendReminder }) => {
   return (

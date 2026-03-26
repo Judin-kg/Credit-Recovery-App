@@ -50,7 +50,7 @@ const CustomerList = () => {
 
   useEffect(() => {
     fetchCustomers();
-  }, []);
+  }, [fetchCustomers]);
 
   // 👁 View Customer
   const handleView = (customer) => {
