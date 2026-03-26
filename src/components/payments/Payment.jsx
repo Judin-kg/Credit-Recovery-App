@@ -91,7 +91,7 @@ const Payment = ({ customer, onClose, onPaymentSuccess }) => {
       setLoading(true);
 
       await axios.post(
-        `http://localhost:5000/api/customers/payment/${customer._id}`,
+        `https://credit-recovery-app-server.vercel.app/api/customers/payment/${customer._id}`,
         {
           amount: Number(amount),
         }

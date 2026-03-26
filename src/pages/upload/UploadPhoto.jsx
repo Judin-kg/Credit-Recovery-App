@@ -413,7 +413,7 @@ const UploadPhoto = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/photo/upload-photo",
+        "https://credit-recovery-app-server.vercel.app/api/photo/upload-photo",
         formData
       );
 

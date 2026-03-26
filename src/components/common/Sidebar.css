@@ -1,3 +1,9 @@
+/* Default Sidebar */
+
+/* Sidebar */
+
+
+
 .sidebar {
   width: 240px;
   height: 100vh;
@@ -5,39 +11,47 @@
   color: white;
   padding: 20px;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 2000;
+  transition: left 0.3s ease;
 }
 
+/* ✅ Closed state */
+.sidebar.closed {
+  left: -240px;
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #00bcd4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3000;
+}
+
+/* Title */
 .sidebar-title {
   text-align: center;
+  margin-left: 5px;
   margin-bottom: 30px;
   font-size: 20px;
   color: #00e5ff;
 }
 
+/* Menu */
 .sidebar-menu {
   list-style: none;
   padding: 0;
 }
 
-.sidebar-menu li {
-  padding: 12px 15px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: 0.3s;
-}
-
-.sidebar-menu li:hover,
-.sidebar-menu li.active {
-  background: #203a43;
-  color: #00e5ff;
-}
-
+/* Links */
 .sidebar-link {
   display: flex;
   align-items: center;
@@ -46,6 +60,7 @@
   color: #ddd;
   text-decoration: none;
   border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .sidebar-link:hover {
@@ -56,23 +71,4 @@
 .sidebar-link.active {
   background: #00bcd4;
   color: #fff;
-}
-
-.sidebar {
-  overflow-y: auto;
-  scrollbar-width: thin; /* Firefox */
-}
-
-/* Chrome Scrollbar */
-.sidebar::-webkit-scrollbar {
-  width: 6px;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background: #00bcd4;
-  border-radius: 10px;
-}
-
-.sidebar::-webkit-scrollbar-track {
-  background: #0f2027;
 }

@@ -68,7 +68,7 @@ const MessageLog = () => {
   const fetchLogs = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/message-logs"
+        "https://credit-recovery-app-server.vercel.app/api/message-logs"
       );
 
       setLogs(res.data.logs || []);
@@ -129,7 +129,7 @@ const MessageLog = () => {
                         log.status === "Sent" ? "sent" : "failed"
                       }`}
                     >
-                      <FaWhatsapp /> {log.status}
+                      <FaWhatsapp /> 
                     </span>
                   </td>
                 </tr>

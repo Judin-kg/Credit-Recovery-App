@@ -8,12 +8,13 @@
   padding: 0 30px;
   color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .navbar-logo {
   font-size: 22px;
   font-weight: bold;
-  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .navbar-logo span {
@@ -26,48 +27,6 @@
   gap: 25px;
 }
 
-.navbar-links li {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-.navbar-links li:hover {
-  color: #00e5ff;
-}
-
-.navbar-profile {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.company-name {
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-.logout-btn {
-  background: #ff4d4d;
-  border: none;
-  padding: 6px 12px;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.logout-btn:hover {
-  background: #ff1a1a;
-}
-
-
 .navbar-link {
   display: flex;
   align-items: center;
@@ -79,4 +38,81 @@
 .navbar-link.active {
   border-bottom: 2px solid #00bcd4;
   color: #00bcd4;
+}
+
+/* Desktop profile */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-name {
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 🔥 Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* 👇 Mobile Profile hidden on desktop */
+.mobile-profile {
+  display: none;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: #0f2027;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.3s;
+  }
+
+  .navbar-links.active {
+    left: 0;
+  }
+
+  .navbar-profile {
+    display: none;
+  }
+
+  .mobile-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+/* 📲 Tablet */
+@media (max-width: 1024px) {
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .company-name {
+    font-size: 12px;
+  }
 }
