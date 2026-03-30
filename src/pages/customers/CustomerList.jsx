@@ -39,6 +39,10 @@
 
 
 
+
+
+
+
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useCustomers } from "../../context/CustomerContext";
@@ -50,7 +54,7 @@ const CustomerList = () => {
 
   useEffect(() => {
     fetchCustomers();
-  }, []);
+  }, [fetchCustomers]);
 
   // 👁 View Customer
   const handleView = (customer) => {
@@ -100,3 +104,6 @@ const CustomerList = () => {
 };
 
 export default CustomerList;
+
+
+
