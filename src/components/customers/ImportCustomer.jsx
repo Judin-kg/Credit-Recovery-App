@@ -22,7 +22,7 @@ const ImportCustomer = () => {
     e.preventDefault();
 
     try {
-      await axios.post("https://credit-recovery-app-server.vercel.app/api/customers", form);
+      await axios.post("https://credit-server-bea3.onrender.com/api/customers", form);
       alert("Customer Added Successfully ✅");
 
       setForm({

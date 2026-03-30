@@ -50,7 +50,7 @@ const CustomerList = () => {
 
   useEffect(() => {
     fetchCustomers();
-  }, [fetchCustomers]);
+  }, []);
 
   // 👁 View Customer
   const handleView = (customer) => {
@@ -62,7 +62,7 @@ const CustomerList = () => {
   const handleSendReminder = async (customer) => {
     try {
       await axios.post(
-        `https://credit-recovery-app-server.vercel.app/api/reminders/send/${customer._id}`
+        `https://credit-server-bea3.onrender.com/api/reminders/send/${customer._id}`
       );
 
       alert("Reminder sent successfully ✅");

@@ -68,7 +68,7 @@ const MessageLog = () => {
   const fetchLogs = async () => {
     try {
       const res = await axios.get(
-        "https://credit-recovery-app-server.vercel.app/api/message-logs"
+        "https://credit-server-bea3.onrender.com/api/message-logs"
       );
 
       setLogs(res.data.logs || []);

@@ -251,7 +251,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "https://credit-recovery-app-server.vercel.app/api/auth/login",
+        "https://credit-server-bea3.onrender.com/api/auth/login",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );

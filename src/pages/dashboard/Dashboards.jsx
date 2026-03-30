@@ -120,7 +120,7 @@ const Dashboard = () => {
   const fetchDashboardStats = async () => {
     try {
       const res = await axios.get(
-        "https://credit-recovery-app-server.vercel.app/api/dashboard/stats"
+        "https://credit-server-bea3.onrender.com/api/dashboard/stats"
       );
       setStats(res.data);
     } catch (error) {

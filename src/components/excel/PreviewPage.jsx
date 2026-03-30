@@ -365,7 +365,7 @@ const UploadPreview = () => {
 
   // save
   const handleSave = async () => {
-    await axios.post("https://credit-recovery-app-server.vercel.app/api/upload/ocr", {
+    await axios.post("https://credit-server-bea3.onrender.com/api/upload/ocr", {
       customers:customers,
       rawText
     });

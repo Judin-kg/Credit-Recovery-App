@@ -282,7 +282,7 @@ const UploadExcel = () => {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://localhost:5000/api/excel/upload",
+        "https://credit-server-bea3.onrender.com/api/excel/upload",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -299,7 +299,7 @@ const UploadExcel = () => {
   const handleConfirm = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/excel/save",
+        "https://credit-server-bea3.onrender.com/api/excel/save",
         previewData
       );
 

@@ -61,7 +61,7 @@ const OcrDataTable = () => {
       setLoading(true);
 
       const res = await axios.get(
-        "https://credit-recovery-app-server.vercel.app/api/photo/ocr-data"
+        "https://credit-server-bea3.onrender.com/api/photo/ocr-data"
       );
 
       const records = res.data.data || [];

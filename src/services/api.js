@@ -53,7 +53,7 @@ import axios from "axios";
  * Axios instance
  */
 const API = axios.create({
-  baseURL: "https://credit-recovery-app-server.vercel.app/api", // change on deployment
+  baseURL: "https://credit-server-bea3.onrender.com/api", // change on deployment
   headers: {
     "Content-Type": "application/json",
   },
